@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'book',
+    'book',
     # 'book.apps.BookConfig',
-    # 理论上不注册子应用等会会出问题
+    # 理论上不注册子应用，等会出问题
 ]
 
 DDLEWARE = [
