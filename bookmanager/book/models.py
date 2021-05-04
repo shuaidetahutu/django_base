@@ -6,6 +6,9 @@ class BookInfo(models.Model):
     # id
     name = models.CharField(max_length=10)
 
+    def __str__(self):
+        return self.name
+
 
 # people
 class PeopleInfo(models.Model):
@@ -13,3 +16,6 @@ class PeopleInfo(models.Model):
     gender = models.BooleanField()
     # foreignKey
     book = models.ForeignKey(BookInfo, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
